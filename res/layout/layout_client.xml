@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="top|center"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_margin="10dp"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:layout_width="match_parent"
+		android:text="对方ip地址："/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:layout_width="match_parent"
+		android:id="@+id/tb_ip"
+		android:layout_margin="10dp"
+		android:lines="1"
+		android:hint="对方ip地址"
+		android:gravity="top"
+		android:text="127.0.0.1"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginLeft="10dp">
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="发送为文件"
+			android:id="@+id/layout_client_is_send_file"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_margin="10dp"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:layout_width="match_parent"
+		android:text="要发送的文件的路径/文本消息："/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:layout_width="match_parent"
+		android:id="@+id/tb_path"
+		android:layout_margin="10dp"
+		android:lines="3"
+		android:hint="要发送的文件的路径/文本消息"
+		android:gravity="top"
+		android:text="/sdcard/calc.apk"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="发送给服务器"
+		android:layout_width="match_parent"
+		android:id="@+id/bn_send"
+		android:layout_margin="10dp"/>
+
+</LinearLayout>
+

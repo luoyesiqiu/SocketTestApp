@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:background="#36C736">
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/tv_ip"
+		android:textColor="#000000"/>
+	
+	<TextView
+		android:textColor="#000000"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:layout_width="match_parent"
+		android:text="文件存放位置："/>
+	<EditText
+		android:layout_height="wrap_content"
+		android:hint="文件存放位置"
+		android:layout_width="match_parent"
+		android:layout_marginBottom="10dp"
+		android:id="@+id/edit_save_path"
+		android:text="/sdcard/socket.dat"
+		android:gravity="top|left"
+		android:textColor="#000000"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="清空消息"
+		android:layout_width="match_parent"
+		android:layout_marginBottom="10dp"
+		android:id="@+id/bn_clear"/>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="显示接收到的内容"
+			android:id="@+id/layout_server_is_show_content"/>
+
+	</LinearLayout>
+	
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tv_msg"
+			android:textColor="#F21A0C"/>
+
+	</ScrollView>
+
+</LinearLayout>
+
